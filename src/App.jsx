@@ -25,7 +25,7 @@ import { useEffect } from 'react';
 function App() {
   const dolarImgs = [dolarImg1, dolarImg2, dolarImg3, dolarImg4, dolarImg5, dolarImg6, dolarImg7, dolarImg8];
   const [isPopupVisible, setPopupVisible] = useState(false);
-  const tokenAddress = '******************';
+  const tokenAddress = 'sdqw21d1mndmbb12d12d1nmm';
 
   const aboutRef = useRef(null);
   const tokenomicsRef = useRef(null);
@@ -50,20 +50,28 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const minScroll = 900; // Паралакс почне працювати після прокрутки 200px
-      const maxScroll = 1300; // Паралакс працюватиме до 300px після мінімального порогу
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.scrollHeight;
+      
+      // Перевірка, чи ширина вікна більше 960px
+      if (window.innerWidth > 960) {
+        const maxScroll = documentHeight - windowHeight; // Максимальне значення прокрутки
+        
+        // Зміщення доларів на основі прокрутки
+        dolarImgs.forEach((_, index) => {
+          const dolarElement = document.querySelector(`.dolar${index + 1}`);
+          if (dolarElement) {
+            // Обчислюємо відсоток прокрутки від 0% до 100%
+            const scrollPercent = scrollPosition / maxScroll;
   
-      // Зміщення доларів на основі прокрутки
-      dolarImgs.forEach((_, index) => {
-        const dolarElement = document.querySelector(`.dolar${index + 1}`);
-        if (dolarElement) {
-          // Якщо скрол перевищив мінімальний поріг
-          if (scrollPosition > minScroll) {
-            const offset = Math.min((scrollPosition - minScroll) * 0.3, (maxScroll - minScroll) * 0.2); // Обмежуємо зміщення
-            dolarElement.style.transform = `translateY(${offset}px)`; // Зміщення по осі Y
+            // Масштабуємо зміщення по осі Y залежно від відсотка прокрутки
+            const offset = scrollPercent * 150; // Множник для паралаксу (100px зміщення при 100% прокрутки)
+            
+            // Застосовуємо зміщення по осі Y
+            dolarElement.style.transform = `translateY(${offset}px)`;
           }
-        }
-      });
+        });
+      }
     };
   
     window.addEventListener('scroll', handleScroll);
@@ -72,8 +80,7 @@ function App() {
       window.removeEventListener('scroll', handleScroll); // Очищення події під час відмонтування компонента
     };
   }, [dolarImgs]);
-
-
+  
 
 
   return (
@@ -101,7 +108,6 @@ function App() {
         ))}
         <HowToBuy 
           ref={howToBuyRef}
-          // dolarImgs={[dolarImg1, dolarImg2, dolarImg3, dolarImg4, dolarImg5, dolarImg6, dolarImg7, dolarImg8]}
         />
       </div>
       <div className="links__wrap">

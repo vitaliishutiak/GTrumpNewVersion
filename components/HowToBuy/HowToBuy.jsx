@@ -17,7 +17,7 @@ const HowToBuy = React.forwardRef(({ dolarImgs }, ref) => (
           <h3 className='block_text'>0.00%</h3>
         </div>
       </div>
-      <h2 className='howToBuy_title'>HOW TO BUY $GTRUMP?</h2>
+      <h2 className='howToBuy_title'><h2>How to buy</h2><h2>$GTRUMP?</h2></h2>
       <div className="howToBuy_cards_container">
         <div className="howToBuy_container-left">
           <div className="howToBuy_card">

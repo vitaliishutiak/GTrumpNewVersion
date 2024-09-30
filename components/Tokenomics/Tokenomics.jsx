@@ -19,7 +19,7 @@ const Tokenomics = React.forwardRef(({ copyImg, tokenAddress, copyToClipboard, t
           $GTRUMP is the next gem of the Trump meta, launched on PumpFun 
           with a mission to become the best Trump related memecoin on SOL.
         </p>
-        <button className='tokenomics_button'>Buy Token</button>
+        <button className='tokenomics_button'>Buy $GTRUMP</button>
       </div>
       <div className="tokenomics_content_right">
         <img className='tokenomics_img' src={tokenomicsImg} alt="Tokenomics" />

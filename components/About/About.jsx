@@ -11,7 +11,7 @@ const About = React.forwardRef(({ titleImg }, ref) => (
         meta representing our conviction for the better 
         future with the right president.
       </p>
-      <button className='about_button'>Buy Token</button>
+      <button className='about_button'>Buy $GTRUMP</button>
     </div>
     <div className='about_right-img'>
       <img className='about_img' src={titleImg} alt="Title" />
