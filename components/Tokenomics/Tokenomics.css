@@ -1,0 +1,223 @@
+.tokenomics_wrap{
+    width: 100%;
+    height: auto;
+    max-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.token_wrap{
+    width: 100%;
+    max-width: 1120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -50px;
+    border: 4px solid rgba(6, 58, 59, 1);
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 16px;
+}
+
+.token_text{
+    font-family: 'Lilita One';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0;
+    /* text-align: left; */
+    color: rgba(6, 58, 59, 1);
+}
+
+.token_address_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+}
+
+.token_copy{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.token_address{
+    font-family: 'Lilita One';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    color: rgba(6, 58, 59, 1);
+    margin-left: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+.tokenomics_content{
+    width: 100%;
+    max-width: 1120px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.tokenomics_content_left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tokenomics_title1{
+    font-family: 'Lilita One';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: left;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.tokenomics_title2{
+    font-family: 'Lilita One';
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: left;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.tokenomics_text{
+    font-family: 'Lilita One';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(0, 188, 193, 1);
+    margin-top: 32px;
+}
+
+
+.tokenomics_button{
+    margin-top: 16px;
+    width: 256px;
+    height: 80px;
+    border-radius: 16px;
+    border: 4px solid #fff;
+    background-color: rgba(0, 188, 193, 1);
+    color: #fff;
+    font-family: 'Lilita One';
+    font-size: 32px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.tokenomics_content_right{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 100px;
+    margin-top: 30px;
+}
+
+.tokenomics_img{
+    width: 100%;
+    max-width: 540px;
+    max-height: 484px;
+}
+
+.popup {
+    position: fixed; 
+    left: 50%; 
+    bottom: -100px;
+    width: 250px;
+    height: 50px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: rgba(6, 58, 59, 1);
+    font-family: 'Lilita One';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 4px solid rgba(6, 58, 59, 1);
+    transition: 0.3s;
+}
+
+.popup.show {
+    bottom: 20px;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 320px) {
+    .token_address{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .token_text{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 648px) {
+    .token_address_container{
+        flex-direction: row;
+    }
+    .tokenomics_title2{
+        font-size: 80px;
+    }
+    .token_wrap{
+        flex-direction: row;
+    }
+    .token_copy{
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+    .token_copy{
+        width: 64px;
+        height: 64px;
+    }
+    .token_address{
+        font-size: 32px;
+    }
+    .tokenomics_content{
+        flex-direction: row;
+    }
+    .tokenomics_content_left{
+        width: 49%;
+        align-items: flex-start;
+    }
+    .tokenomics_title2{
+        font-size: 90px;
+    }
+    .tokenomics_text{
+        text-align: left;
+    }
+    .tokenomics_button:hover{
+        transform: scale(1.05);
+        transition: 0.3s ease;
+    }
+    .tokenomics_content_right{
+        width: 49%;
+        padding: 0;
+        align-items: flex-end;
+        padding-bottom: 50px;
+    }
+    .tokenomics_img{
+        margin-top: 30px;
+    }
+}

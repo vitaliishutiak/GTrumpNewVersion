@@ -1,0 +1,105 @@
+.App{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tokenomics__wrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(6, 58, 59, 1);
+  z-index: 1;
+}
+.howToBuy__wrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.links__wrap{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(6, 58, 59, 1);
+}
+
+.dolar1{
+  position: absolute;
+  width: 300px;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.1s ease-out;
+}
+.dolar2{
+  position: absolute;
+  width: 300px;
+  right: 0;
+  top: 90%;
+  z-index: 1000;
+  transition: transform 0.3s ease-out;
+}
+.dolar3{
+  position: absolute;
+  width: 300px;
+  left: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-out;
+}
+.dolar4{
+  position: absolute;
+  width: 300px;
+  left: 0;
+  top: 90%;
+  z-index: 1000;
+  transition: transform 0.3s ease-out;
+}
+.dolar5{
+  position: absolute;
+  width: 100px;
+  left: 25%;
+  z-index: 1000;
+  transition: transform 0.3s ease-out;
+}
+.dolar6{
+  position: absolute;
+  width: 100px;
+  right: 25%;
+  z-index: 1000;
+  transition: transform 0.3s ease-out;
+}
+.dolar7{
+  position: absolute;
+  width: 100px;
+  left: 25%;
+  top: 90%;
+  z-index: 1000;
+  transition: transform 0.3s ease-out;
+}
+.dolar8{
+  position: absolute;
+  width: 100px;
+  right: 25%;
+  z-index: 1000;
+  top: 90%;
+  transition: transform 0.3s ease-out;
+}
+
+@media  screen and (min-width: 420px) {
+  
+}
+
+@media screen and (min-width: 648px) {
+  
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 960px) {
+  
+}
