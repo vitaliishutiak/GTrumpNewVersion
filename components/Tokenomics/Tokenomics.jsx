@@ -13,13 +13,13 @@ const Tokenomics = React.forwardRef(({ copyImg, tokenAddress, copyToClipboard, t
     </div>
     <div className="tokenomics_content">
       <div className="tokenomics_content_left">
-        <h2 className='tokenomics_title1'>WHAT IS</h2>
+        <h2 className='tokenomics_title1'>What is</h2>
         <h3 className='tokenomics_title2'>$GTRUMP?</h3>
         <p className='tokenomics_text'>
           $GTRUMP is the next gem of the Trump meta, launched on PumpFun 
           with a mission to become the best Trump related memecoin on SOL.
         </p>
-        <button className='tokenomics_button'>Buy $GTRUMP</button>
+        <a href="https://gtrump.fun/"><button className='tokenomics_button'>Buy $GTRUMP</button></a>
       </div>
       <div className="tokenomics_content_right">
         <img className='tokenomics_img' src={tokenomicsImg} alt="Tokenomics" />

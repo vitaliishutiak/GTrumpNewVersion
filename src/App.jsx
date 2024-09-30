@@ -25,7 +25,7 @@ import { useEffect } from 'react';
 function App() {
   const dolarImgs = [dolarImg1, dolarImg2, dolarImg3, dolarImg4, dolarImg5, dolarImg6, dolarImg7, dolarImg8];
   const [isPopupVisible, setPopupVisible] = useState(false);
-  const tokenAddress = 'sdqw21d1mndmbb12d12d1nmm';
+  const tokenAddress = '********************';
 
   const aboutRef = useRef(null);
   const tokenomicsRef = useRef(null);

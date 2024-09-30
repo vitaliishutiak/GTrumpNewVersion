@@ -14,6 +14,7 @@
     height: 120px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     margin-top: -50px;
     border: 4px solid rgba(6, 58, 59, 1);
@@ -160,7 +161,7 @@
 
 @media screen and (min-width: 320px) {
     .token_address{
-        font-size: 10px;
+        font-size: 22px;
     }
 }
 
@@ -177,11 +178,14 @@
     .tokenomics_title2{
         font-size: 80px;
     }
-    .token_wrap{
-        flex-direction: row;
-    }
     .token_copy{
         margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 746px){
+    .token_wrap{
+        flex-direction: row;
     }
 }
 
